@@ -1,0 +1,70 @@
+.skills {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  padding: 40px 0;
+  background-color: #bcdfd1;
+}
+
+.wrap {
+  display: inline-flex;
+  animation: marqueeLine 10s linear infinite;
+}
+
+.skills-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-item {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.skills-item::before {
+  display: inline-block;
+  content: '';
+  background-color: #00b068;
+  border-radius: 2px;
+  width: 8px;
+  height: 8px;
+  margin-right: 24px;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.mask-left,
+.mask-right {
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none; /* чтобы маска не перекрывала клики */
+}
+
+.mask-left {
+  left: 0;
+  background: linear-gradient(to right, #f0f0f0 0%, transparent 100%);
+}
+
+.mask-right {
+  right: 0;
+  background: linear-gradient(to left, #f0f0f0 0%, transparent 100%);
+}
