@@ -1,12 +1,23 @@
-.skills {
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-  padding: 40px 0;
-  background-color: #bcdfd1;
+.section.skills {
+  margin: 40px 0;
 }
 
 .wrap {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  padding: 32px 0;
+  background-color: #bcdfd1;
+  z-index: 2;
+}
+
+.wrap.angled {
+  background-color: #e4e5e6;
+  transform: rotate(2deg);
+  z-index: 1;
+}
+
+.content {
   display: inline-flex;
   animation: marqueeLine 10s linear infinite;
 }
@@ -20,13 +31,17 @@
 .skills-item {
   display: flex;
   align-items: center;
-  margin-right: 24px;
+  margin-right: 16px;
   font-weight: 500;
   font-size: 32px;
   line-height: 125%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #292929;
+}
+
+.angled .skills-item {
+  color: #00b068;
 }
 
 .skills-item::before {
@@ -36,7 +51,11 @@
   border-radius: 2px;
   width: 8px;
   height: 8px;
-  margin-right: 24px;
+  margin-right: 16px;
+}
+
+.angled .skills-item::before {
+  background-color: #292929;
 }
 
 @keyframes marqueeLine {
