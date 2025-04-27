@@ -6,4 +6,4 @@ document.addEventListener('DOMContentLoaded', sendContactRequest);
 
 
 import "./js/faq";
-
+import "./js/reviews";
