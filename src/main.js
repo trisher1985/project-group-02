@@ -1,3 +1,3 @@
 
 
-// import "./js/faq";
+import "./js/faq";
