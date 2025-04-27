@@ -207,6 +207,11 @@
     background: #009156;
 }
 
+
+body.theme-dark button {
+    background: #00b068;
+}
+
 /* #endregion */
 
 /* #region tablet varsion */
