@@ -68,17 +68,17 @@
   }
 }
 
-.mask-left,
+/* .mask-left,
 .mask-right {
   position: absolute;
   top: 0;
   width: 50px;
   height: 100%;
   z-index: 2;
-  pointer-events: none; /* чтобы маска не перекрывала клики */
-}
+  pointer-events: none; //чтобы маска не перекрывала клики 
+} */
 
-.mask-left {
+/* .mask-left {
   left: 0;
   background: linear-gradient(to right, #f0f0f0 0%, transparent 100%);
 }
@@ -86,4 +86,4 @@
 .mask-right {
   right: 0;
   background: linear-gradient(to left, #f0f0f0 0%, transparent 100%);
-}
+} */
