@@ -6,3 +6,5 @@ document.addEventListener('DOMContentLoaded', sendContactRequest);
 import './js/faq';
 import './js/reviews';
 import initializeProjects from './js/my-projects';
+
+initializeProjects();

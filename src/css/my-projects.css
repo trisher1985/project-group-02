@@ -185,13 +185,12 @@ ul.list-projects li.last-chld {
 
 .load-btn::after {
   content: '';
-  width: 118px;
+  display: block;
+  width: 112px;
   height: 2px;
   border-radius: 2px;
   position: absolute;
-  left: 50%;
   bottom: 12px;
-  transform: translateX(-50%);
   background-color: #00b068;
   transition: opacity 0.4s ease;
 }
