@@ -35,7 +35,7 @@ img {
   height: auto;
 }
 
-.container {
+/* .container {
   width: 100%;
   max-width: 320px;
 }
@@ -52,16 +52,34 @@ img {
     width: 100%;
     max-width: 1280px;
   }
-}
+} */
 
 .about-section {
+  margin: 0 auto;
+  padding: 40px 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin: 40px auto;
-
-  background: #f0f0f0;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .about-section {
+    width: 768px;
+    height: auto;
+    margin: 0 auto;
+    padding: 62px 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-section {
+    width: 1280px;
+    padding: 82px 32px;
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+  }
 }
 
 .about-title {
@@ -78,8 +96,9 @@ img {
 .useless {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  /* gap: 32px; */
   align-items: flex-start;
+  height: 100%;
 }
 
 .about-title-span {
@@ -96,7 +115,7 @@ img {
 
 .about-bio-title {
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 32px;
   line-height: 40px;
   letter-spacing: 0.02em;
@@ -105,7 +124,7 @@ img {
   margin-top: 40px;
 }
 
-.about-text {
+.about-text1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -113,6 +132,19 @@ img {
   letter-spacing: 0.03em;
   color: #292929;
   margin-top: 32px;
+  /* height: 288px;
+  width: 270px; */
+  text-align: left;
+}
+
+.about-text2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #292929;
+  margin-top: 24px;
 }
 
 .about-education-title {
@@ -177,6 +209,10 @@ li::marker {
   color: #00b068;
 }
 
+.decor-about-me {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     width: 100%;
@@ -186,10 +222,23 @@ li::marker {
   .about-section {
     background-size: 336px 252px;
     background-position: 400px 840px;
-    background-image: url('./img/about-img/decor-2.png');
+    /* background-image: url('../img/about-img/bg-pc-1x.webp'); */
     background-position: relative;
     background-repeat: no-repeat;
-    margin: 62px auto;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .decor-about-me {
+    display: block;
+    position: absolute;
+    top: 856px;
+    left: 360px;
+    width: 336px;
+    height: 252px;
+    pointer-events: none;
   }
 
   .about-title {
@@ -212,6 +261,12 @@ li::marker {
     margin-top: 408px;
     width: 100%;
     max-width: 336px;
+  }
+
+  .lloyd-pic {
+    border-radius: 16px;
+    width: 336px;
+    height: 392px;
   }
 
   .about-bio {
@@ -245,7 +300,7 @@ li::marker {
   }
 
   .about-education-list {
-    row-gap: 16px;
+    /* row-gap: 16px; */
   }
 
   .about-role-div {
@@ -265,14 +320,14 @@ li::marker {
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
   .container {
     width: 100%;
     max-width: 1280px;
   }
+
   .about-section {
     width: 1216px;
-    margin: 82px auto;
     background-position: 780px 700px;
     background-size: 384px 288px;
   }
@@ -297,6 +352,11 @@ li::marker {
     object-fit: cover;
   }
 
+  .about-bio {
+    width: 488px;
+    height: 488px;
+  }
+
   .about-bio-title {
     font-size: 36px;
     line-height: 48px;
@@ -318,17 +378,27 @@ li::marker {
   .about-education-div {
     width: 384px;
     height: 280px;
+    /* margin-top: 60px; */
   }
 
   .about-education-title {
     font-size: 36px;
     line-height: 48px;
     letter-spacing: 0.01em;
-    margin-top: 60px;
   }
 
   .about-education-list {
-    row-gap: 16px;
+    /* row-gap: 16px; */
+  }
+
+  .decor-about-me {
+    display: block;
+    position: absolute;
+    top: 710px;
+    left: 816px;
+    width: 336px;
+    height: 252px;
+    pointer-events: none;
   }
 
   .about-role-div {

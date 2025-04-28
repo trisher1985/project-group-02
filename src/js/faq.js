@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     questionButton.addEventListener('click', toggleOnClick);
     arrow.addEventListener('click', (e) => {
-      e.stopPropagation(); 
+      e.stopPropagation();
 
       if (answer.classList.contains('show')) {
         item.classList.remove('open');

@@ -1,19 +1,24 @@
 <section class="about-section">
   <div class="container">
+    <picture>
+      <source media="(min-width: 1280px)" srcset="../img/about-img/bg-pc-1x.webp 1x, ../img/about-img/bg-pc-2x.webp 2x">
+
+      <source media="(min-width: 768px)"
+        srcset="/img/about-img/bg-tablet-1x.webp 1x, /img/about-img/bg-tablet-2x.webp 2x">
+
+      <img src="/img/about-img/bg-pc-1x.webp" alt="decor" class="decor-about-me">
+    </picture>
     <h2 class="about-title">ABOUT <span class="about-title-span">ME</span></h2>
     <div class="useless">
       <div class="about-picture">
-        <img
-          class="lloyd-pic"
-          srcset="./about-img/about-me@2x.png 2x"
-          src="./img/about-img/about-me.png"
-          alt="Lloyd Anderson"
-        />
+        <img class="lloyd-pic" srcset="./about-img/about-me@2x.png 2x" src="./img/about-img/about-me.png"
+          alt="Lloyd Anderson" />
       </div>
+
       <div class="about-bio">
         <h2 class="about-bio-title">BIO</h2>
         <div class="about-bio-div">
-          <p class="about-text">
+          <p class="about-text1">
             I'm Lloyd Jefferson, a talented programmer specializing in software
             development. My expertise spans various programming languages and
             technologies, and I am dedicated to continually enhancing my skills.
@@ -21,7 +26,7 @@
             problems, leveraging a high level of analytical skills to
             effectively tackle even the most challenging tasks.
           </p>
-          <p class="about-text">
+          <p class="about-text2">
             Adaptable to both independent and team-oriented work, I collaborate
             seamlessly with colleagues, exchanging ideas and finding optimal
             solutions. My professional maturity enables me to navigate
