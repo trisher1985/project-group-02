@@ -104,6 +104,10 @@ a {
   flex-direction: column;
 }
 
+.picture-container {
+  margin-bottom: 12px;
+}
+
 .text-info {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
@@ -220,6 +224,10 @@ ul.list-projects li.last-chld {
   .text-info {
     margin-bottom: 20px;
     align-items: center;
+  }
+
+  .picture-container {
+    margin-bottom: 16px;
   }
 
   .title-wrap {
