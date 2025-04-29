@@ -99,6 +99,25 @@
   display: none;
 }
 
-.hidden {
-  display: none;
+.wrap.dark {
+  background-color: #204136;
+}
+
+.wrap.angled.dark {
+  background-color: #2a2d32;
+}
+
+.skills-item.dark {
+  color: #f0f0f0;
+}
+.angled .skills-item.dark {
+  color: #14c57c;
+}
+
+.skills-item.dark::before {
+  background-color: #14c57c;
+}
+
+.angled .skills-item.dark::before {
+  background-color: #f0f0f0;
 }

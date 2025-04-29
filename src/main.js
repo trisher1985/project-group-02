@@ -1,4 +1,3 @@
-feature/tech-skills-mob
 import duplicateMarqueeContent from './js/tech-skills';
 
 import { setupEmailInput, sendContactRequest } from './js/work-together';
