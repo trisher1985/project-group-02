@@ -1,7 +1,13 @@
+feature/tech-skills-mob
+import duplicateMarqueeContent from './js/tech-skills';
+
 import { setupEmailInput, sendContactRequest } from './js/work-together';
 
 document.addEventListener('DOMContentLoaded', setupEmailInput);
 document.addEventListener('DOMContentLoaded', sendContactRequest);
+
+duplicateMarqueeContent('marquee-content-angled');
+duplicateMarqueeContent('marquee-content');
 
 import './js/faq';
 import './js/reviews';

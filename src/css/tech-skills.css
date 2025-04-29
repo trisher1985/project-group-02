@@ -19,6 +19,7 @@
 
 .content {
   display: inline-flex;
+  width: max-content;
   animation: marqueeLine 10s linear infinite;
 }
 
@@ -38,6 +39,12 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #292929;
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    line-height: 133%;
+    letter-spacing: 0.01em;
+  }
 }
 
 .angled .skills-item {
@@ -87,3 +94,11 @@
   right: 0;
   background: linear-gradient(to left, #f0f0f0 0%, transparent 100%);
 } */
+
+.hidden {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
