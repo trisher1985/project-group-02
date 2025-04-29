@@ -11,8 +11,10 @@
     <h2 class="about-title">ABOUT <span class="about-title-span">ME</span></h2>
     <div class="useless">
       <div class="about-picture">
-        <img class="lloyd-pic" srcset="./about-img/about-me@2x.png 2x" src="./img/about-img/about-me.png"
-          alt="Lloyd Anderson" />
+        <picture>
+          <source media="(min-width: 1280px)" srcset="/img/about-img/about-me.webp, /img/about-img/about-me@2x.webp 2x">
+          <img src="/img/about-img/decor-2.png" alt="Lloyd Anderson" class="lloyd-pic">
+        </picture>
       </div>
 
       <div class="about-bio">
