@@ -19,6 +19,7 @@
 
 .content {
   display: inline-flex;
+  width: max-content;
   animation: marqueeLine 10s linear infinite;
 }
 
