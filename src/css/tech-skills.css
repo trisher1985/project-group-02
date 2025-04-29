@@ -27,6 +27,7 @@
 
 .content {
   display: inline-flex;
+  width: max-content;
   animation: marqueeLine 10s linear infinite;
 }
 
@@ -138,4 +139,26 @@
   --dark-accet-dt: #204136;
   --hover-green-dt: #009156;
   --error: #e74a3b;
+=======
+.wrap.dark {
+  background-color: #204136;
+}
+
+.wrap.angled.dark {
+  background-color: #2a2d32;
+}
+
+.skills-item.dark {
+  color: #f0f0f0;
+}
+.angled .skills-item.dark {
+  color: #14c57c;
+}
+
+.skills-item.dark::before {
+  background-color: #14c57c;
+}
+
+.angled .skills-item.dark::before {
+  background-color: #f0f0f0;
 }
