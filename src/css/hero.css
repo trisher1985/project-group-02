@@ -34,8 +34,6 @@
     padding-top: 80px;
 }
 
-.developer-pic {}
-
 .hero-decor {
     display: none;
 }
@@ -66,6 +64,10 @@
     height: 204px;
     background: #e4e5e6;
     right: 20px;
+}
+
+body.theme-dark .hero-bottom-peace {
+    background: #2a2d32;
 }
 
 .hero-bottom-peace-text {
@@ -203,6 +205,9 @@
         width: 411px;
         height: 24px;
         margin-bottom: 40px;
+
+        position: relative;
+        z-index: 10;
     }
 
     .hero-contact-li {
@@ -214,7 +219,19 @@
         color: #292929;
     }
 
+    .hero-contact-link {
+        cursor: pointer;
+    }
+
     .hero-contact-li:hover {
+        color: #00b068;
+    }
+
+    body.theme-light .hero-contact-link:hover {
+        color: #00b068;
+    }
+
+    body.theme-dark .hero-contact-link:hover {
         color: #00b068;
     }
 

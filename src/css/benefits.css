@@ -24,6 +24,7 @@
   padding: 0 20px;
   margin-top: 40px;
   margin-bottom: 8px;
+
   @media screen and (min-width: 768px) {
     margin-left: auto;
     margin-right: auto;
@@ -62,6 +63,14 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 16px;
+}
+
+body.theme-light .wrapper-icon {
+  background-color: #bcdfd1;
+}
+
+body.theme-dark .wrapper-icon {
+  background: #204136;
 }
 
 .item-benefits {
