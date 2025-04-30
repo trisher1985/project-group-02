@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project-group-02</title>
+    <link
+      rel="icon"
+      href="/project-group-02/assets/sprite-misc-svg-CjMQX6Fn.svg#icon-logo-favicon"
+      type="image/svg+xml"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script type="module" crossorigin src="/project-group-02/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/project-group-02/assets/vendor-C7Ro5tdo.js">
+    <link rel="stylesheet" crossorigin href="/project-group-02/assets/vendor-pvxkJjp9.css">
+    <link rel="stylesheet" crossorigin href="/project-group-02/assets/index-BScu8pk2.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>project-group-02</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script type="module" crossorigin src="/project-group-02/index.js"></script>
-  <link rel="modulepreload" crossorigin href="/project-group-02/assets/vendor-C7Ro5tdo.js">
-  <link rel="stylesheet" crossorigin href="/project-group-02/assets/vendor-pvxkJjp9.css">
-  <link rel="stylesheet" crossorigin href="/project-group-02/assets/index-B2qftzhk.css">
-</head>
-
-<body class="theme-light">
-  <section class="header-section">
+  <body class="theme-light">
+    <section class="header-section">
     <div class="header-container container">
         <a href="./index.html" class="header-logo">LLOYD<span class="header-logo-highlight">JEFFERSON.</span>
         </a>
@@ -101,9 +110,9 @@
     </div>
 </section>
 
-  <main>
-    <!-- Loads the specified .html file -->
-    <section class="hero-section">
+    <main>
+      <!-- Loads the specified .html file -->
+      <section class="hero-section">
     <div class="hero-container container">
         <picture class="developer-pic">
             <source media="(min-width: 1280px)"
@@ -152,7 +161,7 @@
         </div>
     </div>
 </section>
-    <section class="about-section">
+      <section class="about-section">
   <div class="container">
     <picture>
       <source media="(min-width: 1280px)" srcset="/project-group-02/assets/bg-pc-1x-B_6Dm_6Q.webp 1x, /project-group-02/assets/bg-pc-2x-DxhifxYK.webp 2x">
@@ -223,7 +232,7 @@
     </div>
   </div>
 </section>
-    <section class="tech-skills-section">
+      <section class="tech-skills-section">
   <div class="section skills">
     <h2 class="title hidden"></h2>
     <div class="mask-left"></div>
@@ -255,7 +264,7 @@
     </div>
   </div>
 </section>
-    <section class="section-projects" id="projects">
+      <section class="section-projects" id="projects">
   <div class="container">
     <h2 class="title-my">MY <span class="title-projects">PROJECTS</span></h2>
     <ul class="list-projects">
@@ -714,7 +723,7 @@
   </div>
 </section>
 
-    <div class="section benefits">
+      <div class="section benefits">
   <h2 class="title-benefits">
     <span class="word benefits">Benefits</span>
     <span class="word of">of</span>
@@ -843,7 +852,7 @@
   </ul>
 </div>
 
-    <section class="faq qtn" id="faq">
+      <section class="faq qtn" id="faq">
   <div class="container faq-content">
     <div class="title-qth">
       <h2 class="faq-title">
@@ -939,13 +948,13 @@
   </div>
 </section>
 
-    <section class="reviews section">
+      <section class="reviews section">
   <div class="reviews-wrapper container">
     <h2 class="section-title reviews-title">Reviews</h2>
 
     <div class="reviews-swiper swiper">
       <ul class="reviews-list swiper-wrapper"></ul>
-      <div class="js-notify notify hide">No found</div>
+      <div class="js-notify notify hide">Not found</div>
     </div>
     <div class="reviews-buttons">
       <button
@@ -953,20 +962,28 @@
         type="button"
         aria-label="Previous slide"
       >
-        <img src="./img/reviews/arrow-narrow-right.svg" alt="Arrow left" />
+        <svg class="icon-arrow-reviews-left" width="24" height="24">
+          <use
+            href="/project-group-02/assets/sprite-misc-svg-CjMQX6Fn.svg#icon-arrow-narrow-left"
+          ></use>
+        </svg>
       </button>
       <button
         class="reviews-buttons-item reviews-next-btn"
         type="button"
         aria-label="Next slide"
       >
-        <img src="./img/reviews/arrow-narrow-right.svg" alt="Arrow right" />
+        <svg class="icon-arrow-reviews-right" width="24" height="24">
+          <use
+            href="/project-group-02/assets/sprite-misc-svg-CjMQX6Fn.svg#icon-arrow-narrow-right"
+          ></use>
+        </svg>
       </button>
     </div>
   </div>
 </section>
 
-    <section class="work-together-section">
+      <section class="work-together-section">
     <div class="title-svg container">
         <h2 class="work-together-text">
             LET'S <span class="work-together-text-highlight">WORK TOGETHER</span>
@@ -1042,9 +1059,9 @@
         </div>
     </div>
 </section>
-  </main>
+    </main>
 
-  <footer class="footer-section">
+    <footer class="footer-section">
   <div class="container footer-content">
     <div class="footer-logo-ul">
       <h2 class="footer-logo">
@@ -1069,14 +1086,19 @@
     <p class="copyright-text">&copy; Copyright 2024. Made by LloydJefferson</p>
   </div>
 </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.9.0/axios.min.js"
-    integrity="sha512-FPlUpimug7gt7Hn7swE8N2pHw/+oQMq/+R/hH/2hZ43VOQ+Kjh25rQzuLyPz7aUWKlRpI7wXbY6+U3oFPGjPOA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.9.0/axios.min.js"
+      integrity="sha512-FPlUpimug7gt7Hn7swE8N2pHw/+oQMq/+R/hH/2hZ43VOQ+Kjh25rQzuLyPz7aUWKlRpI7wXbY6+U3oFPGjPOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-</body>
-
+  </body>
 </html>
