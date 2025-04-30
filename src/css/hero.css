@@ -31,18 +31,12 @@
     color: #292929;
 
     width: 320px;
-    /* margin-top: 80px; */
     padding-top: 80px;
 }
 
 .developer-pic {}
 
 .hero-decor {
-    /* width: 320px;
-    height: 704px;
-    position: relative;
-    top: 725px;
-    right: 5px; */
     display: none;
 }
 
@@ -96,7 +90,6 @@
     .hero-section {
         width: 768px;
         padding-bottom: 62px;
-        /* background-image: none; */
     }
 
     .hero-title {
@@ -143,6 +136,15 @@
         height: 320px;
         right: 32px;
     }
+
+    body.theme-light .hero-bottom-peace {
+        background: #e4e5e6;
+    }
+
+    body.theme-dark .hero-bottom-peace {
+        background-color: #2a2d32;
+    }
+
 
     .hero-bottom-peace-text {
         font-weight: 500;

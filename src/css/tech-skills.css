@@ -1,5 +1,27 @@
 .section.skills {
-  margin: 40px 0;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .section.skills {
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section.skills {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+}
+
+.tech-skills-section {
+  padding: 0;
+  margin: 0 auto;
 }
 
 .wrap {
@@ -145,13 +167,22 @@
   background-color: #204136;
 }
 
+body.theme-dark .wrap {
+  background: #204136;
+}
+
 .wrap.angled.dark {
   background-color: #2a2d32;
+}
+
+body.theme-dark .wrap.angled {
+  background: #2a2d32;
 }
 
 .skills-item.dark {
   color: #f0f0f0;
 }
+
 .angled .skills-item.dark {
   color: #14c57c;
 }
