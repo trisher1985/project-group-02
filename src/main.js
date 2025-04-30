@@ -1,3 +1,4 @@
+// import './assets/fonts/impact.ttf';
 import duplicateMarqueeContent from './js/tech-skills';
 
 import { setupEmailInput, sendContactRequest } from './js/work-together';
