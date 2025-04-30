@@ -230,6 +230,12 @@ body.theme-dark .reviews-buttons-item:hover {
 @media screen and (min-width: 768px) {
   .reviews-title {
     margin-bottom: 60px;
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 108px;
+    line-height: 1.14815;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
   }
 
   .swiper {
