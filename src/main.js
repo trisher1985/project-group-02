@@ -15,6 +15,3 @@ import './js/reviews';
 import initializeProjects from './js/my-projects';
 
 initializeProjects();
-
-
-
