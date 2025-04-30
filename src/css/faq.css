@@ -38,7 +38,7 @@
      cursor: pointer;
      align-items: center;
      text-align: left;
-     transition: background-color var(--time) var(--cubic);
+     transition: background-color var(--accent-cl) var(--cubic);
      display: flex;
      gap: 16px;
 
@@ -149,6 +149,9 @@
 
      border: solid #f0f0f0;
      ;
+
+     border: solid #292929;;
+
 
      border-width: 0 2px 2px 0;
      display: inline-block;
