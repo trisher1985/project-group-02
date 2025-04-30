@@ -20,23 +20,23 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     // --- Smooth Scroll ---
-    const anchorLinks = document.querySelectorAll('.header-nav-page-link, .btn-order');
+    // const anchorLinks = document.querySelectorAll('.header-nav-page-link, .btn-order');
 
-    anchorLinks.forEach(link => {
-        link.addEventListener('click', event => {
-            event.preventDefault();
+    // anchorLinks.forEach(link => {
+    //     link.addEventListener('click', event => {
+    //         event.preventDefault();
 
-            const targetId = link.getAttribute('href')?.slice(1) || link.dataset.target;
-            const targetElement = document.getElementById(targetId);
+    //         const targetId = link.getAttribute('href')?.slice(1) || link.dataset.target;
+    //         const targetElement = document.getElementById(targetId);
 
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start',
-                });
-            }
-        });
-    });
+    //         if (targetElement) {
+    //             targetElement.scrollIntoView({
+    //                 behavior: 'smooth',
+    //                 block: 'start',
+    //             });
+    //         }
+    //     });
+    // });
 
     // --- Theme Switcher ---
     const body = document.body;

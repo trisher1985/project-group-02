@@ -204,7 +204,18 @@
     color: #f0f0f0;
 }
 
+
+
 .btn-submit:hover {
+    background: #009156;
+}
+
+body.theme-dark .btn-submit {
+    background: #00b068;
+    border: none;
+}
+
+body.theme-dark .btn-submit:hover {
     background: #009156;
 }
 

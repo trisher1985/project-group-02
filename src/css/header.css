@@ -227,6 +227,15 @@ body.theme-dark .btn-burger {
   .btn-order:hover {
     background: #009156;
   }
+
+  body.theme-dark .btn-order {
+    background: #00b068;
+  }
+
+  body.theme-dark .btn-order:hover {
+    background: #009156;
+  }
+
 }
 
 /* #region pc version */
@@ -386,6 +395,7 @@ body.theme-dark .header-menu.is-open {
 
 body.theme-dark .close-icon {
   stroke: #f0f0f0;
+  background: #1e2023;
 }
 
 .menu-ul {
@@ -431,6 +441,14 @@ body.theme-dark .close-icon {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f0f0f0;
+}
+
+body.theme-dark .btn-order-menu {
+  background: #00b068;
+}
+
+.btn-order-menu:hover {
+  background: #009156;
 }
 
 .bottom-peace {
