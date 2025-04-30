@@ -1,11 +1,15 @@
  .faq-title {
      font-family: "Impact", sans-serif;
+     text-align: start;
+     font-size: 2rem;
+     margin-bottom: 20px;
      font-weight: 400;
-     font-size: 52px;
-     line-height: 1.23077;
-     letter-spacing: 0.03em;
+     font-size: 82px;
+     line-height: 1.23;
+
      text-transform: uppercase;
-     color: #292929;
+     color: var(--main-cl);
+     margin-bottom: 40px;
  }
 
  .question {

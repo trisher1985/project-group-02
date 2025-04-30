@@ -46,10 +46,6 @@ a {
   padding-bottom: 40px;
 }
 
-.portfolio-project {
-  border-radius: 16px;
-}
-
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -59,10 +55,6 @@ a {
   .section {
     padding-top: 62px;
     padding-bottom: 62px;
-  }
-
-  .portfolio-project {
-    border-radius: 24px;
   }
 }
 
@@ -212,7 +204,6 @@ ul.list-projects li.last-chld {
 }
 
 @media screen and (min-width: 768px) {
-
   .title-my,
   .title-projects {
     font-size: 108px;
@@ -268,7 +259,6 @@ ul.list-projects li.last-chld {
 }
 
 @media screen and (min-width: 1280px) {
-
   .title-my,
   .title-projects {
     margin-bottom: 80px;
