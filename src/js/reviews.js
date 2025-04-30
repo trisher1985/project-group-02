@@ -1,4 +1,4 @@
-const list =  document.querySelector('.reviews-list');
+const list = document.querySelector('.reviews-list');
 const container = document.querySelector('.reviews-swiper');
 const errorInfoMessage = document.querySelector('.js-notify');
 
@@ -33,7 +33,6 @@ function renderReviews(reviewsArr) {
 
 document.addEventListener('DOMContentLoaded', handleReviews);
 
-
 async function handleReviews() {
   try {
     const review = await getReviews();
@@ -49,7 +48,7 @@ const swiper = new Swiper(container, {
   direction: 'horizontal',
   slidesPerView: 1,
   speed: 400,
-  spaceBetween: 30,
+  spaceBetween: 32,
   navigation: {
     nextEl: '.reviews-next-btn',
     prevEl: '.reviews-prev-btn',
@@ -60,7 +59,10 @@ const swiper = new Swiper(container, {
   },
   breakpoints: {
     768: {
+      slidesPerView: 1,
+    },
+    1280: {
       slidesPerView: 2,
-    }    
+    },
   },
 });
