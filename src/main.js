@@ -9,12 +9,10 @@ document.addEventListener('DOMContentLoaded', sendContactRequest);
 duplicateMarqueeContent('marquee-content-angled');
 duplicateMarqueeContent('marquee-content');
 
+import './js/header'
 import './js/menu';
 import './js/faq';
 import './js/reviews';
 import initializeProjects from './js/my-projects';
 
 initializeProjects();
-
-
-

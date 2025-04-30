@@ -26,7 +26,6 @@
 body {
   display: flex;
   flex-direction: column;
-  min-width: 100vw;
   min-height: 100vh;
   background: inherit;
   margin: 0 auto;
@@ -62,8 +61,7 @@ body.theme-dark ::placeholder {
 }
 
 body.theme-dark input,
-body.theme-dark textarea,
-body.theme-dark button {
+body.theme-dark textarea {
   background: #2a2d32;
 }
 

@@ -159,9 +159,25 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-info:hover,
-.btn-info:focus {
-  background-color: #bbbbbb;
+
+.btn-info:hover {
+  background: #bbb;
+}
+
+body.theme-light .btn-info {
+  background-color: #e4e5e6;
+}
+
+body.theme-light .btn-info:hover {
+  background: #bbb;
+}
+
+body.theme-dark .btn-info {
+  background: #2a2d32;
+}
+
+body.theme-dark .btn-info:hover {
+  background: #3b3f45;
 }
 
 .icon-arrow {
@@ -192,6 +208,19 @@ ul.list-projects li.last-chld {
   position: relative;
   margin: 0 auto;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.theme-light .load-btn {
+  background-color: none;
+}
+
+body.theme-dark .load-btn {
+  background: none;
+  color: #f0f0f0;
+}
+
+body.theme-dark .load-btn:hover {
+  color: #00b068;
 }
 
 .load-btn::after {

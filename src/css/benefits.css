@@ -7,15 +7,34 @@
   color: #292929;
   margin-bottom: 40px;
 
+  @media screen and (min-width: 280px) {
+    width: 190px;
+  }
+
   @media screen and (min-width: 768px) {
-    width: 704px;
+    width: 685px;
     font-size: 108px;
     line-height: 115%;
     letter-spacing: 0.02em;
+    .with {
+      display: block;
+    }
+
+    .me {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 812px;
+
+    .with {
+      display: inline;
+    }
   }
 }
 
-.title-benefits .accent {
+.title-benefits .benefits {
   color: #00b068;
 }
 
@@ -24,11 +43,12 @@
   padding: 0 20px;
   margin-top: 40px;
   margin-bottom: 8px;
+
   @media screen and (min-width: 768px) {
     margin-left: auto;
     margin-right: auto;
     padding: 0 32px;
-    border-top: 62px;
+    margin-top: 62px;
     margin-bottom: 31px;
   }
 }
@@ -64,18 +84,68 @@
   margin-bottom: 16px;
 }
 
+body.theme-light .wrapper-icon {
+  background-color: #bcdfd1;
+}
+
+body.theme-dark .wrapper-icon {
+  background: #204136;
+}
+
 .item-benefits {
   @media screen and (min-width: 768px) {
-    width: 336px;
-    height: 184px;
+    width: 100%;
   }
+}
+
+.item-benefits:nth-child(1) {
+  grid-area: item1;
+}
+.item-benefits:nth-child(2) {
+  grid-area: item2;
+}
+.item-benefits:nth-child(3) {
+  grid-area: item3;
+}
+.item-benefits:nth-child(4) {
+  grid-area: item4;
 }
 
 .list-benefits {
   @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      '. item1'
+      'item2 item3'
+      'item4 .';
+    gap: 32px;
     margin-top: -62px;
+  }
+}
+
+  @media screen and (min-width: 1280px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      '. . item1'
+      'item2 item3 item4';
+    gap: 32px;
+    margin-top: -96px;
+  }
+}
+
+.benefits .decor-bg {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+    position: absolute;
+    top: -116px;
+    right: 32px;
+    width: 528px;
+    height: 408px;
+    pointer-events: none;
   }
 }
