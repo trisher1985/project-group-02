@@ -70,6 +70,14 @@
   background: #e4e5e6;
 }
 
+body.theme-light .swiper .swiper-slide.reviews-item {
+  background: #e4e5e6;
+}
+
+body.theme-dark .swiper .swiper-slide.reviews-item {
+  background: #2a2d32;
+}
+
 .swiper-slide-inner {
   height: 100%;
   display: flex;

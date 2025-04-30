@@ -159,17 +159,25 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+.btn-info:hover {
+  background: #bbb;
+}
+
 body.theme-light .btn-info {
   background-color: #e4e5e6;
+}
+
+body.theme-light .btn-info:hover {
+  background: #bbb;
 }
 
 body.theme-dark .btn-info {
   background: #2a2d32;
 }
 
-.btn-info:hover,
-.btn-info:focus {
-  background-color: #bbbbbb;
+body.theme-dark .btn-info:hover {
+  background: #3b3f45;
 }
 
 .icon-arrow {

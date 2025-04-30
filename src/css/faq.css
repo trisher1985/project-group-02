@@ -6,6 +6,7 @@
      letter-spacing: 0.03em;
      text-transform: uppercase;
      color: #292929;
+     margin-bottom: 40px;
  }
 
  .question {
@@ -42,10 +43,13 @@
      gap: 16px;
 
      background-color: transparent;
+     font-family: "Poppins", sans-serif;
      font-weight: 400;
      font-size: 18px;
-     line-height: 1.56;
-
+     line-height: 1.55556;
+     letter-spacing: 0.03em;
+     text-transform: uppercase;
+     color: #292929;
      text-transform: uppercase;
      color: var(--main-cl);
      padding: 28px 24px;
@@ -55,9 +59,23 @@
      transition: color var(--time) var(--cubic), background-color var(--time) var(--cubic);
  }
 
+ .faq-answer-p {
+     font-family: "Poppins", sans-serif;
+     font-weight: 300;
+     font-size: 16px;
+     line-height: 1.5;
+     letter-spacing: 0.03em;
+     color: #292929;
+ }
+
  .faq-item.open .faq-question {
      background-color: var(--second-bcg);
      border-radius: 16px 16px 0 0;
+     background: #bcdfd1;
+ }
+
+ body.theme-dark .faq-item.open .faq-question {
+     background: #204136;
  }
 
  .faq-item:hover {
@@ -87,6 +105,11 @@
 
  .faq-item.open .faq-answer {
      display: block;
+     background: #bcdfd1;
+ }
+
+ body.theme-dark .faq-item.open .faq-answer {
+     background: #204136;
  }
 
  .faq-answer.show {
@@ -104,7 +127,31 @@
      top: 40px;
      right: 24px;
 
+     border: solid #292929;
+     ;
+
+     border-width: 0 2px 2px 0;
+     display: inline-block;
+     transform-origin: center;
+     transition: transform 0.3s;
+ }
+
+ body.theme-dark .faq-arrow {
+     position: absolute;
+     transform: translateY(-50%) rotate(45deg);
+     width: 10px;
+     height: 10px;
+
+     flex-shrink: 0;
+     margin-left: 16px;
+     top: 40px;
+     right: 24px;
+
+     border: solid #f0f0f0;
+     ;
+
      border: solid #292929;;
+
 
      border-width: 0 2px 2px 0;
      display: inline-block;
@@ -113,6 +160,10 @@
  }
 
  .faq-arrow.open {
+     transform: translateY(-50%) rotate(225deg);
+ }
+
+ body.theme-dark .faq-arrow.open {
      transform: translateY(-50%) rotate(225deg);
  }
 

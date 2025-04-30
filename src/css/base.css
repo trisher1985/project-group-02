@@ -54,8 +54,7 @@ body.theme-dark ::placeholder {
 }
 
 body.theme-dark input,
-body.theme-dark textarea,
-body.theme-dark button {
+body.theme-dark textarea {
   background: #2a2d32;
 }
 
