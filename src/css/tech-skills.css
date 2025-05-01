@@ -33,7 +33,7 @@
   z-index: 2;
 }
 
-.wrap.dark {
+.theme-dark .wrap {
   background-color: #204136;
 }
 
@@ -43,7 +43,7 @@
   z-index: 1;
 }
 
-.wrap.angled.dark {
+.theme-dark .wrap.angled {
   background-color: #2a2d32;
 }
 
@@ -77,7 +77,7 @@
   }
 }
 
-.skills-item.dark {
+.theme-dark .skills-item {
   color: #f0f0f0;
 }
 
@@ -85,7 +85,7 @@
   color: #00b068;
 }
 
-.angled .skills-item.dark {
+.theme-dark .angled .skills-item {
   color: #14c57c;
 }
 
@@ -99,7 +99,7 @@
   margin-right: 16px;
 }
 
-.skills-item.dark::before {
+.theme-dark .skills-item::before {
   background-color: #14c57c;
 }
 
@@ -107,7 +107,7 @@
   background-color: #292929;
 }
 
-.angled .skills-item.dark::before {
+.theme-dark .angled .skills-item::before {
   background-color: #f0f0f0;
 }
 
@@ -143,36 +143,4 @@
 
 .hidden {
   display: none;
-}
-
-.wrap.dark {
-  background-color: #204136;
-}
-
-body.theme-dark .wrap {
-  background: #204136;
-}
-
-.wrap.angled.dark {
-  background-color: #2a2d32;
-}
-
-body.theme-dark .wrap.angled {
-  background: #2a2d32;
-}
-
-.skills-item.dark {
-  color: #f0f0f0;
-}
-
-.angled .skills-item.dark {
-  color: #14c57c;
-}
-
-.skills-item.dark::before {
-  background-color: #14c57c;
-}
-
-.angled .skills-item.dark::before {
-  background-color: #f0f0f0;
 }
