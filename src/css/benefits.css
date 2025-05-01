@@ -1,5 +1,5 @@
 .title-benefits {
-  font-family: "Impact", sans-serif;
+  font-family: 'Impact', sans-serif;
   font-weight: 400;
   font-size: 52px;
   line-height: 123%;
@@ -11,7 +11,7 @@
 
 @media screen and (min-width: 768px) {
   .title-benefits {
-    font-family: "Impact", sans-serif;
+    font-family: 'Impact', sans-serif;
     font-weight: 400;
     font-size: 108px;
     line-height: 1.14815;
@@ -23,7 +23,7 @@
 
 @media screen and (min-width: 1280px) {
   .title-benefits {
-    font-family: "Impact", sans-serif;
+    font-family: 'Impact', sans-serif;
     font-weight: 400;
     font-size: 108px;
     line-height: 1.14815;
@@ -33,31 +33,37 @@
   }
 }
 
-/* @media screen and (min-width: 280px) {
+@media screen and (min-width: 280px) {
+  .title-benefits {
     width: 190px;
   }
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .title-benefits {
     width: 685px;
     font-size: 108px;
     line-height: 115%;
     letter-spacing: 0.02em;
-    .with {
-      display: block;
-    }
-
-    .me {
-      display: block;
-    }
+  }
+  .with {
+    display: block;
   }
 
-  @media screen and (min-width: 1280px) {
-    width: 812px;
+  .me {
+    display: block;
+  }
+}
 
-    .with {
-      display: inline;
-    }
-  } */
+@media screen and (min-width: 1280px) {
+  .title-benefits {
+    width: 812px;
+  }
+
+  .with {
+    display: inline;
+  }
+}
 
 .title-benefits .benefits {
   color: #00b068;
@@ -75,7 +81,7 @@
 }
 
 .subtitle {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 156%;
@@ -85,7 +91,7 @@
 }
 
 .descr {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
@@ -146,7 +152,7 @@ body.theme-dark .wrapper-icon {
       'item2 item3'
       'item4 .';
     gap: 32px;
-    /* margin-top: -62px; */
+    margin-top: -62px;
   }
 }
 
@@ -172,16 +178,16 @@ body.theme-dark .wrapper-icon {
   } */
 
 @media screen and (min-width: 768px) {
-  .decor-bg {
+  .section-benefits .decor-bg {
     display: none;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .decor-bg {
+  .section-benefits .decor-bg {
     display: block;
     position: absolute;
-    top: -116px;
+    top: -34px;
     right: 32px;
     width: 528px;
     height: 408px;
