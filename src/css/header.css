@@ -93,7 +93,7 @@ body.theme-dark .burger-icon {
   right: 0;
   bottom: 0;
   background-color: #e4e5e6;
-  transition: .5s;
+  transition: .4s;
   border-radius: 24px;
 }
 
@@ -105,7 +105,7 @@ body.theme-dark .burger-icon {
   left: 2px;
   bottom: 2px;
   background-color: #00b068;
-  transition: .4s;
+  transition: .2s;
   border-radius: 50%;
   z-index: 1;
 }
@@ -120,14 +120,26 @@ body.theme-dark .burger-icon {
   background-color: #292929;
   border-radius: 50%;
   transform: scale(0);
-  /* transition: .0s; */
+  opacity: 0;
+  transition: transform .4s ease-out, opacity .2s ease-out;
   z-index: 2;
+  display: none;
+}
+
+@keyframes slideIn {
+  from {
+    transform: scale(1);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(14px) scale(1);
+    opacity: 1;
+  }
 }
 
 input:checked+.slider {
   background-color: #292929;
-  /* transition: .6s; */
-  transition: margin-right 4s ease-in-out;
 }
 
 input:checked+.slider:before {
@@ -135,9 +147,22 @@ input:checked+.slider:before {
 }
 
 input:checked+.slider:after {
-  transform: translateX(14px) scale(1);
-  /* transition: .6s; */
+  display: block;
+  animation: slideIn 0.7s ease-out forwards;
+  animation-delay: 100ms;
 }
+
+input:not(:checked)+.slider:after {
+  display: none;
+  /* Миттєво приховуємо псевдоелемент */
+}
+
+/* input:checked+.slider:after {
+  display: block;
+  transform: translateX(14px) scale(1);
+  transform: scale(1);
+  opacity: 1;
+} */
 
 .btn-burger {
   border: none;
@@ -227,6 +252,19 @@ body.theme-dark .btn-burger {
   .btn-order:hover {
     background: #009156;
   }
+
+  body.theme-dark .btn-order {
+    background: #00b068;
+  }
+
+  body.theme-dark .btn-order:hover {
+    background: #009156;
+  }
+
+  .btn-order-link {
+    padding: 12px 18px;
+  }
+
 }
 
 /* #region pc version */
@@ -386,6 +424,7 @@ body.theme-dark .header-menu.is-open {
 
 body.theme-dark .close-icon {
   stroke: #f0f0f0;
+  background: #1e2023;
 }
 
 .menu-ul {
@@ -431,6 +470,18 @@ body.theme-dark .close-icon {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f0f0f0;
+}
+
+body.theme-dark .btn-order-menu {
+  background: #00b068;
+}
+
+.btn-order-menu:hover {
+  background: #009156;
+}
+
+.btn-order-link-menu {
+  padding: 12px 50px;
 }
 
 .bottom-peace {

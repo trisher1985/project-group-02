@@ -127,7 +127,7 @@ body.theme-dark .swiper .swiper-slide.reviews-item {
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: #292929;
-  margin-top: 24px;
+  margin-top: 18px;
   display: flex;
   align-items: center;
 }
@@ -164,6 +164,26 @@ body.theme-dark .swiper .swiper-slide.reviews-item {
   justify-content: flex-end;
 }
 
+.icon-arrow-reviews-left {
+  fill: #f0f0f000;
+  stroke: #292929;
+}
+
+body.theme-dark .icon-arrow-reviews-left {
+  fill: #29292900;
+  stroke: #f0f0f0;
+}
+
+.icon-arrow-reviews-right {
+  fill: #f0f0f000;
+  stroke: #292929;
+}
+
+body.theme-dark .icon-arrow-reviews-right {
+  fill: #29292900;
+  stroke: #f0f0f0;
+}
+
 .reviews-buttons-item {
   display: flex;
   align-items: center;
@@ -174,6 +194,19 @@ body.theme-dark .swiper .swiper-slide.reviews-item {
   border: 1px solid #292929;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.reviews-buttons-item:hover {
+  background: #e4e5e6;
+}
+
+body.theme-dark .reviews-buttons-item {
+  border: 1px solid #2a2d32;
+  background: #1e2023;
+}
+
+body.theme-dark .reviews-buttons-item:hover {
+  background: #2a2d32;
 }
 
 .reviews-buttons-item:first-of-type {
@@ -197,6 +230,12 @@ body.theme-dark .swiper .swiper-slide.reviews-item {
 @media screen and (min-width: 768px) {
   .reviews-title {
     margin-bottom: 60px;
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 108px;
+    line-height: 1.14815;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
   }
 
   .swiper {

@@ -27,8 +27,6 @@
      border-radius: 16px 16px 0 0;
      border-bottom: 1px solid var(--main-bcg);
      overflow: hidden;
-     transition: color var(--time) var(--cubic), background-color var(--time) var(--cubic);
-
  }
 
  .faq-question {
@@ -55,8 +53,6 @@
      padding: 28px 24px;
      padding-right: 80px;
      position: relative;
-
-     transition: color var(--time) var(--cubic), background-color var(--time) var(--cubic);
  }
 
  .faq-answer-p {
@@ -76,6 +72,10 @@
 
  body.theme-dark .faq-item.open .faq-question {
      background: #204136;
+ }
+
+ body.theme-dark .faq-question {
+     background: none;
  }
 
  .faq-item:hover {
@@ -129,6 +129,7 @@
 
      border: solid #292929;
 
+
      border-width: 0 2px 2px 0;
      display: inline-block;
      transform-origin: center;
@@ -147,10 +148,6 @@
      right: 24px;
 
      border: solid #f0f0f0;
-     ;
-
-     border: solid #292929;;
-
 
      border-width: 0 2px 2px 0;
      display: inline-block;
